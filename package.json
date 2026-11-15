@@ -1,0 +1,16 @@
+{
+  "name": "marswalk",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "test": "node scripts/test-media-slots.mjs && node scripts/test-capcom-api.mjs && node scripts/test-nearby-stops.mjs && node scripts/test-route-cost.mjs && node scripts/test-serve.mjs && node scripts/test-route-reasons.mjs && node scripts/test-route-notes.mjs && node scripts/test-terrain-live.mjs && node scripts/test-capcom-tools.mjs && node scripts/test-live-views.mjs && node scripts/test-effort.mjs && node scripts/test-dem3d.mjs && node scripts/test-route-options.mjs && node scripts/test-routing.mjs && node scripts/test-vr.mjs && node scripts/test-map.mjs && node scripts/test-globe.mjs && node scripts/test-experience.mjs && node scripts/test-mission-flow.mjs && node scripts/test-alternatives.mjs && node scripts/test-camera-sample.mjs && node scripts/test-terrain-adapter.mjs && node scripts/test-terrain-walker.mjs && node scripts/test-simulator.mjs && node scripts/test-region-tasks.mjs && node scripts/test-capcom.mjs && node --test scripts/test-pathfinding.mjs",
+    "bundle": "python3 scripts/build_bundle.py",
+    "verify:bundle": "python3 scripts/build_bundle.py --check",
+    "watch:zip": "python3 scripts/build_bundle.py --watch",
+    "build": "npm test && npm run bundle && npm run verify:bundle"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

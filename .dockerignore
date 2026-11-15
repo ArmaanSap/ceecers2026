@@ -1,0 +1,11 @@
+.git
+.githooks
+.env
+.env.*
+!.env.example
+node_modules
+tools
+inputs
+docs
+**/__pycache__
+ARCHIVE-MANIFEST.json

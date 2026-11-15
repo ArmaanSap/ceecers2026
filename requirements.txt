@@ -1,0 +1,3 @@
+# Optional, for data refresh only. App and ZIP builder do not need these packages.
+Pillow
+beautifulsoup4
